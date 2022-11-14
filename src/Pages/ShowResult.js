@@ -1,16 +1,21 @@
-import React,{useState} from 'react';
-import { useSelector } from 'react-redux';
-import {v4} from 'uuid'
+import React from 'react';
+import {useSelector} from 'react-redux';
 import 'chart.js/auto';
-import AgeChart from '../component/AgeChart'
-import SkillsChart from '../component/SkillsChart';
-const ShowResult = () => {
-    const state = useSelector(state => state.usersData);
 
-    const ageData = {};
-    const skillsData = {};
+//Component
+import AgeChart from '../Component/AgeChart'
+import SkillsChart from '../Component/SkillsChart';
+
+const ShowResult = () => {
+    // load data from localStorage with redux
+    const state = useSelector(state => state.usersData);
+    
+    //counting the number of ages and skills
+    const ageData = {}
+    const skillsData = {}
     state.map(x => ageData[x.age] = (ageData[x.age] || 0) + 1);
     state.map(x => skillsData[x.skills] = (skillsData[x.skills] || 0) + 1);
+
     return (
         <div>
             <AgeChart ageData={ageData}/>

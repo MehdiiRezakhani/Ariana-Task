@@ -1,10 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import {Routes, Route} from 'react-router-dom';
-//component
-import Header from './component/Header';
-import AddList from './component/AddList';
+
+//pages
+import Home from './Pages/Home'
 import ShowResult from './Pages/ShowResult';
+
+//components
+import Header from './Component/Header';
+
 //redux
 import store from './redux/store';
 
@@ -13,8 +17,8 @@ const App = () => {
     <Provider store={store}>
       <Header/>
       <Routes>
-        <Route path='/' element={<AddList/>}/>
-        <Route path='/view' element={<ShowResult/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/show-result' element={<ShowResult/>}/>
       </Routes>
     </Provider>
   );

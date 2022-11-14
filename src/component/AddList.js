@@ -30,6 +30,15 @@ const AddList = () => {
                         placeholder='Enter Your FullName'
                         required
                     /><br/>
+                    <label htmlFor="name">Name</label>
+                    <input 
+                        id="name" 
+                        type="text" 
+                        value={dataObj.name}
+                        onChange={event => setDataObj({...dataObj, name:event.target.value})}
+                        placeholder='Enter Your FullName'
+                        required
+                    /><br/>
                     <label htmlFor="age">Age</label>
                     <input 
                         id='age' 

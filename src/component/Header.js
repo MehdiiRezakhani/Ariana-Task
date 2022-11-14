@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <Link to='/'>Home</Link><br/>
-            <Link to='/view'>view</Link>
+            <Link to='/show-result'>view</Link>
         </header>
     );
 };
