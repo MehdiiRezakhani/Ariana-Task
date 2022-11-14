@@ -1,12 +1,12 @@
 const initialState = {
-    usersData : "df"
+    usersData : []
 }
 const dataReducer = (state = initialState, action) => {
     switch(action.type) {
         case "ADD-DATA": 
             return {
                 ...state,
-                usersData : action.payload
+                usersData : [...action.payload]
             }
         default: 
             return state;

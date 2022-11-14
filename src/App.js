@@ -4,7 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 //component
 import Header from './component/Header';
 import AddList from './component/AddList';
-import DisplayList from './component/DisplayList';
+import ShowResult from './Pages/ShowResult';
 //redux
 import store from './redux/store';
 
@@ -14,7 +14,7 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element={<AddList/>}/>
-        <Route path='/view' element={<DisplayList/>}/>
+        <Route path='/view' element={<ShowResult/>}/>
       </Routes>
     </Provider>
   );
