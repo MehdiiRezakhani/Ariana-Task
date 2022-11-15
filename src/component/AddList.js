@@ -16,16 +16,15 @@ const AddList = () => {
     const [data, setData] = useState(state);
 
     const selectHandler = () => {
-        let skills = [...skillsRef.current.options].filter(option => option.selected).map(option => option.value);
-        setDataObj({...dataObj, skills:skills})
+        let skillsValue = [...skillsRef.current.options].filter(option => option.selected).map(option => option.value);
+        setDataObj({...dataObj, skills:skillsValue})
     } 
-
+    
     const SendData = () => {
         data.push(dataObj)
         dispatch(addData(data))
-        setDataObj({})
+        setDataObj({name:"",age:"",skills:[]})
     }
-
     return (
             <div className={styles.AddList}>
                 <div>
@@ -50,7 +49,7 @@ const AddList = () => {
                     <select 
                         id='skills' 
                         name="skills" 
-                        // value={dataObj.skills} 
+                        // value={skillsValue} 
                         ref={skillsRef}
                         onChange={selectHandler}
                         data-mdb-clear-button="true"

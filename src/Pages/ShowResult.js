@@ -18,7 +18,6 @@ const ShowResult = () => {
     const skillsData = {}
     state.map(x => ageData[x.age] = (ageData[x.age] || 0) + 1);
     state.map(x => skillsData[x.skills] = (skillsData[x.skills] || 0) + 1);
-
     return (
         <div className={styles.ShowResult}>
             <h3>You can view the latest user information analysis result on these charts!</h3>
