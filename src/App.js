@@ -2,6 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import {Routes, Route} from 'react-router-dom';
 
+//redux
+import store from './redux/store';
+
 //pages
 import Home from './Pages/Home'
 import ShowResult from './Pages/ShowResult';
@@ -9,8 +12,6 @@ import ShowResult from './Pages/ShowResult';
 //components
 import Header from './Component/Header';
 import Footer from './Component/Footer';
-//redux
-import store from './redux/store';
 
 const App = () => {
   return (
