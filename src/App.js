@@ -8,7 +8,7 @@ import ShowResult from './Pages/ShowResult';
 
 //components
 import Header from './Component/Header';
-
+import Footer from './Component/Footer';
 //redux
 import store from './redux/store';
 
@@ -16,10 +16,13 @@ const App = () => {
   return (
     <Provider store={store}>
       <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/show-result' element={<ShowResult/>}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/show-result' element={<ShowResult/>}/>
+        </Routes>
+      </main>
+      <Footer/>
     </Provider>
   );
 };

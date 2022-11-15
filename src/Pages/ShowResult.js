@@ -6,6 +6,9 @@ import 'chart.js/auto';
 import AgeChart from '../Component/AgeChart'
 import SkillsChart from '../Component/SkillsChart';
 
+//style 
+import styles from '../Styles/dist/ShowResult.module.css';
+
 const ShowResult = () => {
     // load data from localStorage with redux
     const state = useSelector(state => state.usersData);
@@ -17,9 +20,16 @@ const ShowResult = () => {
     state.map(x => skillsData[x.skills] = (skillsData[x.skills] || 0) + 1);
 
     return (
-        <div>
-            <AgeChart ageData={ageData}/>
-            <SkillsChart skillsData={skillsData}/>
+        <div className={styles.ShowResult}>
+            <h3>You can view the latest user information analysis result on these charts!</h3>
+            <div>
+                <h5>Age Analysis</h5>
+                <AgeChart ageData={ageData}/>
+            </div>
+            <div>
+                <h5>Skills Analysis</h5>
+                <SkillsChart skillsData={skillsData}/>
+            </div>
         </div>
     );
 };

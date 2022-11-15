@@ -1,0 +1,50 @@
+@import 'variables'; 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: $bgColor2;
+    color: #000;
+
+    & > a {
+        direction: rtl;
+        text-decoration: none;
+        color:inherit;
+
+        img {
+            width: 100px;
+        }
+    }
+    
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+    h5 {
+        margin:10px;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        background-color: $bgColor1;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        a {
+            color: $bgColor2;
+            &:hover {
+                color: #000;
+            }
+        }
+    
+    }
+}

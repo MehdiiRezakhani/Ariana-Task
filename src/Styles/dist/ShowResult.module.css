@@ -1,0 +1,25 @@
+.ShowResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.ShowResult > h3 {
+  font-size: 1.5rem;
+}
+.ShowResult > div {
+  padding: 35px;
+  margin: 15px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.ShowResult > div > h5 {
+  font-size: 1.2rem;
+}

@@ -1,8 +1,17 @@
+.AddList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .AddList div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 70%;
   padding: 20px 35px 40px;
   background: #fff;
   box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
@@ -57,9 +66,6 @@
 .AddList div select:focus {
   background-color: #fff;
   outline-color: #E2E6EE;
-}
-.AddList div select option::selection {
-  color: red;
 }
 .AddList div button {
   width: 100%;

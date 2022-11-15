@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 15px 25px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #000;
+}
+header img {
+  width: 100px;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header div a {
+  padding: 10px;
+  font-size: 1.7rem;
+}
+header div a:hover {
+  color: #84cbdd;
+}

@@ -1,0 +1,44 @@
+.DisplayList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.DisplayList > p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.DisplayList > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.DisplayList > div div {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #84cbdd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.DisplayList > div div p {
+  font-size: 1.5rem;
+  color: #84cbdd;
+}
+.DisplayList > div div p span {
+  color: #000;
+}

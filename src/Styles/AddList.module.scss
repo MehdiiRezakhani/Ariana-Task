@@ -1,10 +1,17 @@
 @import 'variables';
-
-.AddList div{
+.AddList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.AddList div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 70%;
     padding: 20px 35px 40px;
     background: $bgColor2;
     box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
@@ -13,12 +20,14 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    
         p {
         margin: auto auto;
         padding: 30px 5px;
         font-size: 2rem;
         font-weight: 700;
     }
+
     label {
         font-weight: 400;
         font-size: 1.5rem;
@@ -26,6 +35,7 @@
         margin-bottom: 5px;
         color: #030102;
     }
+
     input {
         padding: 8px 12px;
         background: #E2E6EE;
@@ -36,6 +46,7 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+
         &:focus {
             background-color: $bgColor2;
             outline-color: #E2E6EE;
@@ -55,14 +66,13 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         cursor: pointer;
+
         &:focus {
             background-color: $bgColor2;
             outline-color: #E2E6EE;
         }
-        option::selection{
-            color: red;
-        }
     }
+
     button {
         width: 100%;
         padding: 10px 20px;
@@ -73,6 +83,7 @@
         border-radius: 10px;
         cursor: pointer;
     }
+
     button[disabled] {
         background: #9fbec9;
         cursor: not-allowed;

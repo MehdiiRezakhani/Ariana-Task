@@ -1,0 +1,50 @@
+@import 'variables';
+
+.DisplayList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: $bgColor2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    &>p {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &>div {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+            div {
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid $bgColor1;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                p {
+                    font-size: 1.5rem;
+                    color: $bgColor1;
+        
+                    span {
+                        color:#000;
+                    }
+                }
+        }
+    }
+}
