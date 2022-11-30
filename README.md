@@ -1,6 +1,6 @@
 # About the project
 
-You can enter your name, age, and skills and see the result on the charts.
+You can enter your name, age, and skills in a form and see the result on the charts.
 
 react, react-router-dom, redux, react-chartjs, chart.js, uuid have been used in this project.
 By redux, the data set and get in localStorage.
